@@ -1,15 +1,15 @@
 # Java installer PPA
 apt-get update
-apt-get install dirmngr
+apt-get install dirmngr -y
 
 echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu bionic main" | tee /etc/apt/sources.list.d/linuxuprising-java.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
 apt-get update
 
 # Packages required for workstation
-apt-get remove $(grep -vE "^\s*#" unwanted.packages.list  | tr "\n" " ")
-apt-get install $(grep -vE "^\s*#" packages.list  | tr "\n" " ")
-apt-get autoremove
+apt-get remove $(grep -vE "^\s*#" unwanted.packages.list  | tr "\n" " ") -y
+apt-get install $(grep -vE "^\s*#" packages.list  | tr "\n" " ") -y
+apt-get autoremove -y
 
 # Add ifto user to sudo 
 usermod -aG sudo ifto
