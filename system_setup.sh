@@ -16,7 +16,7 @@ usermod -aG sudo ifto
 
 # Turning off auto-mounting and hiding any devices on the system
 gsettings set org.gnome.desktop.media-handling automount false
-python3 scripts/hide-partitions-rules.py > /etc/udev/rules.d/90-hide-partitions.rules
+python3 ./scripts/hide-partitions.rules.py | tee /etc/udev/rules.d/90-hide-partitions.rules
 
 # Chowning some Gsettings folders to user so they can set the permission next.
 # Somehow this is broken in default configs. 
