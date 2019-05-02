@@ -2,6 +2,7 @@ afflib-tools
 android-tools-fastboot
 dirmngr
 ewf-tools
+gnome-session
 libafflib-dev
 libafflib0v5
 libbfio-dev
