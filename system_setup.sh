@@ -47,9 +47,12 @@ rm autopsy-4.6.0-linux1.zip
 cd $autopsy_dir
 sh unix_setup.sh
 
+chown ifto -R $autopsy_dir
+chmod +x $autopsy_dir/bin/autopsy
+
 cd $current_pwd
 
-wget https://gist.githubusercontent.com/Miesvanderlippe/3ee596297d5f9af6d393ae91daa2d81c/raw/4951f6a1331d7c4cc91fdd577dc04f32f9f0cf0c/autopsy.desktop -O /usr/share/applications/autopsy.desktop
+wget https://gist.githubusercontent.com/Miesvanderlippe/3ee596297d5f9af6d393ae91daa2d81c/raw/4951f6a1331d7c4cc91fdd577dc04f32f9f0cf0c/autopsy.desktop -O /home/ifto/.local/share/applications/autopsy.desktop
 
 # Set the background images
 wget http://www.ufvinternational.com/wp-content/uploads/2013/01/Hogeschool_Leiden.jpg -O /home/ifto/Pictures/hsl.jpg
