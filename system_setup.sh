@@ -50,3 +50,8 @@ sh unix_setup.sh
 cd $current_pwd
 
 wget https://gist.githubusercontent.com/Miesvanderlippe/3ee596297d5f9af6d393ae91daa2d81c/raw/4951f6a1331d7c4cc91fdd577dc04f32f9f0cf0c/autopsy.desktop -O /usr/share/applications/autopsy.desktop
+
+# Set the background images
+wget http://www.ufvinternational.com/wp-content/uploads/2013/01/Hogeschool_Leiden.jpg -O /home/ifto/Pictures/hsl.jpg
+su - ifto -c 'gsettings set org.gnome.desktop.background picture-uri file:////home/ifto/Pictures/hsl.jpg'
+su - ifto -c 'gsettings set org.gnome.desktop.background show-desktop-icons true'
