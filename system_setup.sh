@@ -35,7 +35,7 @@ dpkg -i sleuthkit-java_4.6.0-1_amd64.deb
 rm sleuthkit-java_4.6.0-1_amd64.deb
 
 ## Autopsy
-current_pwd=pwd
+current_pwd=$(pwd)
 autopsy_dir="/home/ifto/Autopsy"
 
 mkdir $autopsy_dir
