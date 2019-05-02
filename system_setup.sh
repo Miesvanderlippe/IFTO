@@ -22,6 +22,9 @@ python3 ./scripts/hide-partitions.rules.py | tee /etc/udev/rules.d/90-hide-parti
 # Somehow this is broken in default configs. 
 chown ifto /run/user/0 -R  -v
 
+# Set the prefference for the user as well
+su - ifto -c 'gsettings set org.gnome.desktop.media-handling automount false'
+
 # Setting the Java Home var for Autopsy
 echo 'JAVA_HOME="/usr/lib/jvm/java-11-oracle"' >> /etc/environment
 source /etc/environment
