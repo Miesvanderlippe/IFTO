@@ -24,6 +24,37 @@ sh system_setup.sh | tee log.txt
 
 It may be wise to reboot the system now. 
 
+## Take away some persistency
+
+In order to take away some of the cross-contamination risk we can make the home-dir a tmpfs mount. 
+
+As root run; 
+
+```
+mkdir /home_source
+crontab -e 
+```
+
+Add the following line; 
+
+> @reboot cp -a /home_source/* /home
+
+Then; 
+
+```
+nano /etc/fstab
+```
+
+And add;
+
+> tmpfs   /home   tmpfs   rw,nosuid,nodev,noatime 0 0
+
+Lastly, copy the original home-dir contents to the persistent home_source; 
+
+```
+cp -rp /home/* /home_source
+```
+
 ## Cloning the VM
 
 On the host, run the following commands
