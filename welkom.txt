@@ -1,0 +1,19 @@
+Welkom in deze draadbare forensisch omgeving. Het doel van de omgeving is om de gebruiker diverse taken op locatie uit te laten voeren.
+
+In deze omgeving zijn de volgende vier tools in ieder geval geinstalleerd; 
+
+Imaging 
+Om het maken van images te vergemakkelijken is LibEWF geïnstalleerd. Dit pakket biedt onder andere het ewfacquire commando dat in de tests goed naar voren kwam. Daarnaast is als onderdeel van Autopsy ook The Sleuth Kit beschikbaar wat veel hulpmiddelen biedt met betrekking tot het vinden van data op schijven. 
+
+Data-Recovery
+Allebei de geteste tools in dit document zijn exclusief aan Windows dus is gekozen voor Photorec. Deze software is ook de basis van vele andere toepassingen en biedt vertrouwde resultaten. 
+
+Mobile Forensics
+Voor onderzoek van mobiele apparaten is de Android Debug Bridge geinstalleerd. In combinatie met Autopsy en de andere hulpmiddelen moet dit het onderzoeken van mobiele telefoons mogelijk maken. 
+
+Analyse tools
+De bekendste speler die ook een Linux client biedt is Autopsy. Ook van deze software is de broncode beschikbaar. Ook zijn er vele plugins beschikbaar die tal van toepassingen mogelijk maken. 
+
+Deze vier tools komen ook voor in het onderzoek. 
+
+Daarnaast zijn diverse andere CLI en GUI tools geinstallerd. Zie hiervoor de packages.list die bij dit document gevonden kan worden. 

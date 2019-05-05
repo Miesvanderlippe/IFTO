@@ -58,3 +58,6 @@ wget https://gist.githubusercontent.com/Miesvanderlippe/3ee596297d5f9af6d393ae91
 wget http://www.ufvinternational.com/wp-content/uploads/2013/01/Hogeschool_Leiden.jpg -O /home/ifto/Pictures/hsl.jpg
 su - ifto -c 'gsettings set org.gnome.desktop.background picture-uri file:////home/ifto/Pictures/hsl.jpg'
 su - ifto -c 'gsettings set org.gnome.desktop.background show-desktop-icons true'
+
+cp welkom.txt /home/ifto/Desktop/welkom.txt
+cp packages.list  /home/ifto/Desktop/packages.list
